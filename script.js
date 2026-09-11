@@ -17,7 +17,18 @@ btn.addEventListener("click", function () {
 
 const counterText = document.getElementById("counter");
 let count = 0;
+
 btn.addEventListener("click", () => {
   count++;
-  counterText.textContent = "Jumlah ditekan: " + count;
+  counterText.textContent = "Jumlah klik: " + count;
+  btn.textContent = "Sudah ditekan!";
+  btn.style.backgroundColor = "lightgreen";
+  btn.style.color = "black";
+});
+
+resetBtn.addEventListener("click", () => {
+  count = 0;
+  counterText.textContent = "Jumlah klik: " + count;
+  btn.textContent = "Tekan aku";
+  btn.style.backgroundColor = "aqua";
 });
