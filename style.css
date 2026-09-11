@@ -11,10 +11,16 @@ button {
   padding: 20px;
   border: none;
   box-shadow: 0 5px 8px grey;
-  color: white;
   border-radius: 8px;
-  background-color: rgb(209, 5, 5);
+  background-color:aqua;
   cursor: pointer;
+}
+#resetBtn {
+  background-color: red;
+  color: white;
+}
+#resetBtn:hover {
+  background-color: darkred;
 }
 #counter {
   margin-top: 15px;
@@ -23,7 +29,7 @@ button {
 }
 
 button:hover {
-  transform: translateY(-10);
+  transform: translateY(-10px);
   box-shadow: 0 10px 15px rgb(108, 93, 93);
   transition:
     transform 0.2s ease,
