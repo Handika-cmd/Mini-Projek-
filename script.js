@@ -21,3 +21,17 @@ btn.addEventListener("click", () => {
   count++;
   counterText.textContent = "Jumlah ditekan: " + count;
 });
+
+btn.addEventListener("click", () => {
+  count++;
+  counterText.textContent = "Jumlah klik: " + count;
+  btn.textContent = "Sudah diklik!";
+  btn.style.backgroundColor = "lightgreen";
+});
+
+resetBtn.addEventListener("click", () => {
+  count = 0;
+  counterText.textContent = "Jumlah klik: " + count;
+  btn.textContent = "Klik Aku";
+  btn.style.backgroundColor = "aqua";
+});
