@@ -12,5 +12,12 @@ btn.addEventListener("mouseout", function () {
 btn.addEventListener("click", function () {
   btn.textContent = "Sudah ditekan!";
   btn.style.backgroundColor = "lightgreen";
-  btn.style.color = "black"
+  btn.style.color = "black";
+});
+
+const counterText = document.getElementById("counter");
+let count = 0;
+btn.addEventListener("click", () => {
+  count++;
+  counterText.textContent = "Jumlah ditekan: " + count;
 });
