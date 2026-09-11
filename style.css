@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin:0;
+}
+
+button{
+    padding: 20px;
+    border: none;
+    box-shadow: 0 4px 8px grey;
+    border-radius: 8px;
+    background-color: rgb(205, 205, 245);
+    cursor: pointer;
+}
+button:hover{
+    transform: translateY(-5);
+    box-shadow: 0 5px 15px rgb(108, 93, 93);
+}
