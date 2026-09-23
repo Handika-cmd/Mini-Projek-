@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Form Pendaftaran Mahasiswa</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="card">
+        <div class="header">
+          <p class="badge">MINI PROJECT | DAY 14</p>
+
+          <h1>Form Pendaftaran Mahasiswa</h1>
+
+          <p>Silakan isi data diri kamu dengan lengkap.</p>
+        </div>
+
+        <form id="form">
+          <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+
+            <input
+              type="text"
+              id="nama"
+              placeholder="Contoh: Handika Saputra"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+
+            <input type="email" id="email" placeholder="nama@email.com" />
+          </div>
+
+          <div class="form-group">
+            <label for="jurusan">Jurusan</label>
+
+            <input
+              type="text"
+              id="jurusan"
+              placeholder="Contoh: Pendidikan Agama Islam"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="semester">Semester</label>
+
+            <select id="semester">
+              <option value="">Pilih semester</option>
+              <option value="1">Semester 1</option>
+              <option value="2">Semester 2</option>
+              <option value="3">Semester 3</option>
+              <option value="4">Semester 4</option>
+              <option value="5">Semester 5</option>
+              <option value="6">Semester 6</option>
+              <option value="7">Semester 7</option>
+              <option value="8">Semester 8</option>
+            </select>
+          </div>
+
+          <button type="submit" id="submitButton">Daftar Sekarang</button>
+        </form>
+
+        <div class="result" id="result">
+          <h2>Hasil Pendaftaran</h2>
+
+          <p id="hasil">Data pendaftaran akan muncul di sini.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
