@@ -11,5 +11,7 @@ form.addEventListener("submit", function(event){
 
     hasil.innerHTML =
     "Nama: " + nama.value + "<br>" + "<br>" +
-    "Email: " + email.value + "<br>" + "<br>" 
-});
+    "Email: " + email.value + "<br>" + "<br>" +
+    "Jurusan: " + jurusan.value + "<br>" + "<br>" +
+    "Semester: " + semester.value + "<br>" + "<br>";
+ });
