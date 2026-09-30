@@ -58,12 +58,13 @@ body {
 
 .header h1 {
     margin-bottom: 10px;
-
+    text-align: center;
     color: #111827;
     font-size: 30px;
 }
 
 .header p:last-child {
+    text-align: center;
     color: #6b7280;
     line-height: 1.6;
 }
@@ -163,6 +164,7 @@ button:active {
 }
 
 .result {
+    text-align: center;
     margin-top: 30px;
     padding: 20px;
 
