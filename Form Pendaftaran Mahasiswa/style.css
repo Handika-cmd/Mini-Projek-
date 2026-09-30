@@ -108,10 +108,12 @@ body {
         0 0 0 3px rgba(99, 102, 241, 0.12);
 }
 
-button {
+#submitButton {
     width: 100%;
 
     padding: 14px;
+
+    margin-bottom: 10px;
 
     border: none;
     border-radius: 10px;
@@ -127,8 +129,33 @@ button {
     transition: 0.2s;
 }
 
-button:hover {
+#submitButton:hover {
     background: #4338ca;
+}
+
+#resetButton {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 10px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #F44336;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#resetButton:hover {
+    background: #D32F2F;
 }
 
 button:active {
@@ -141,7 +168,7 @@ button:active {
 
     border-radius: 14px;
 
-    background: #f8fafc;
+    background: #EEEEEE;
 
     border: 1px solid #e5e7eb;
 }
