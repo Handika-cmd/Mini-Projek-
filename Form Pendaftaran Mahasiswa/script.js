@@ -19,7 +19,7 @@ form.addEventListener("submit", function(event){
 
     };
     
-    // langkah 5: buat Variabel jSON 
+    // langkah 5: buat Variabel jSON stringify()
     const dataJSON = JSON.stringify(mahasiswa);
     // Langkah 6: simpan dataJSON ke local storage dan buat key nya
     localStorage.setItem("mahasiswa",dataJSON);
@@ -27,16 +27,16 @@ form.addEventListener("submit", function(event){
 
 // Langkah 7: ambil dataJSONnya
 const dataTersimpan = localStorage.getItem("mahasiswa");
-// Langkah 8: kembalikan dataJSON menjadi object
+// Langkah 8: kembalikan dataJSON menjadi object parse()
 const mahasiswaTersimpan = JSON.parse(dataTersimpan);
 
 // Langkah 8: Tampilkan ke layar jika ada data, kirimkan pesan "belum ada data" jika tidak ada data.
 if(mahasiswaTersimpan){
     hasil.innerHTML =
-    "Nama: " + mahasiswa.nama + "<br>"+
-    "Email: " + mahasiswa.email + "<br>" +
-    "Jurusan: " + mahasiswa.jurusan + "<br>"+
-    "Semester: " + mahasiswa.semester;
+    "Nama: " + mahasiswaTersimpan.nama + "<br>"+
+    "Email: " + mahasiswaTersimpan.email + "<br>" +
+    "Jurusan: " + mahasiswaTersimpan.jurusan + "<br>"+
+    "Semester: " + mahasiswaTersimpan.semester;
 }else{
     hasil.textContent = "Belum ada data tersimpan";
 };
